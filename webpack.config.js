@@ -29,7 +29,7 @@ module.exports.module.rules.push({
 
 // Add support for resource files
 module.exports.module.rules.push({
-    test: /\.(png|svg|jpg|gif|woff|woff2|eot|ttf|otf|ico|mp3|wav|hdr|glb)$/,
+    test: /\.(png|svg|jpg|gif|woff|woff2|eot|ttf|otf|ico|mp3|wav|hdr|glb|html)$/,
     use: [
         {
             loader: 'url-loader',

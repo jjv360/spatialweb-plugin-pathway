@@ -8,8 +8,15 @@ export default class PathwayPlugin extends BasePlugin {
     /** Called on load */
     onLoad() {
 
-        // Show alert
-        this.menus.alert("The webpack plugin has loaded!", "My Webpack Plugin", "info")
+        // Add info button
+        this.menus.register({
+            title: "What is this?",
+            text: "What is this?",
+            section: 'controls',
+            panel: {
+                iframeURL: require('./whatisthis.html')
+            }
+        })
 
     }
 
