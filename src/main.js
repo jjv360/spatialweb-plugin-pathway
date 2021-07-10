@@ -32,7 +32,7 @@ export default class PathwayPlugin extends BasePlugin {
         })
 
         // Preload sound effects
-        this.audio.preload(absolutePath('good-ding.wav'))
+        this.audio.preload(absolutePath('good-ding.mp3'))
         this.audio.preload(absolutePath('bad-ding.flac'))
 
         // Start render timer
@@ -152,7 +152,7 @@ class PathwayFloorTile extends BaseComponent {
             let isGood = !!this.fields.collide
 
             // Activate! Play the sound
-            this.plugin.audio.play(absolutePath(isGood ? 'good-ding.wav' : 'bad-ding.flac'), {
+            this.plugin.audio.play(absolutePath(isGood ? 'good-ding.mp3' : 'bad-ding.flac'), {
                 x: this.fields.world_center_x,
                 height: this.fields.world_center_y,
                 y: this.fields.world_center_z,
