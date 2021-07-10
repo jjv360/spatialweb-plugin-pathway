@@ -1,0 +1,25 @@
+{
+  "name": "spatialweb-plugin-pathway",
+  "version": "1.0.0",
+  "description": "This plugin is used in the space at https://spatialweb.net/@jjv360-pathway",
+  "main": "src/main.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "keywords": [
+    "spatialweb",
+    "plugin"
+  ],
+  "author": "jjv360",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/plugin-proposal-decorators": "^7.14.5",
+    "@babel/preset-env": "^7.14.7",
+    "babel-loader": "^8.2.2",
+    "core-js": "^3.15.2",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.44.0",
+    "webpack-cli": "^4.7.2"
+  }
+}
